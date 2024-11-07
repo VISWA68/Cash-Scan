@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: AnimatedSplashScreen(
         backgroundColor: const Color.fromARGB(255, 255, 192, 83),
-        duration: 9000,
+        duration: 4000,
         centered: true,
         splash: Stack(
           alignment: Alignment.center,
