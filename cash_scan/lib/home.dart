@@ -46,6 +46,11 @@ class _HomeState extends State<Home> {
             _speech.stop();
             setState(() => _isListening = false);
           }
+          if (result.recognizedWords.toLowerCase().contains("count")) {
+            _count();
+            _speech.stop();
+            setState(() => _isListening = false);
+          }
         },
       );
     }
@@ -65,6 +70,10 @@ class _HomeState extends State<Home> {
         _responseText = "No image captured.";
       });
     }
+  }
+
+  Future<void> _count() async {
+    
   }
 
   Future<void> _sendImageToServer(File image) async {
