@@ -42,8 +42,8 @@ dependencies:
   image_picker: ^1.1.2
   http: ^1.2.2
   permission_handler: ^11.3.1
-  flutter_gemini: ^2.0.3
   flutter_dotenv: ^5.2.1
+  google_generative_ai: ^0.4.6
 
 dev_dependencies:
   flutter_test:
@@ -71,6 +71,7 @@ flutter:
   assets:
     - asset/splash.json
     - asset/logo.jpg
+    - .env
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
